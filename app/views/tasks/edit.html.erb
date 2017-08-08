@@ -1,0 +1,8 @@
+<h1>Editer</h1>
+
+
+<%= form_for @task do |f| %>
+  <%= f.text_field :description %>
+  <%= f.text_field :status %>
+  <%= f.submit 'Editer' %>
+<% end %>

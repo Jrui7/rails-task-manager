@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+status = ["done", "to do"]
+
+
+  50.times do
+    task = Task.new(
+      description:    Faker::Company.name,
+      status: "#{status.sample}",
+    )
+    task.save!
+  end
